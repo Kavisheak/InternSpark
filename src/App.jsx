@@ -1,3 +1,4 @@
+import AdvertismentPage from "./components/AdvertismentPage"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <>
-     
+     <AdvertismentPage/>
     </>
   )
 }
