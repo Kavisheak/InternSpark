@@ -1,4 +1,5 @@
 import AdvertismentPage from "./components/AdvertismentPage"
+import CompanyHome from "./components/Company/CompanyHome"
 
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
 
   return (
     <>
-     <AdvertismentPage/>
+     {/* <AdvertismentPage/> */}
+     <CompanyHome/>
     </>
   )
 }

@@ -2,9 +2,9 @@ import React from 'react';
 
 export const AdNavbar = () => {
   return (
-    <div className='mt-5 p-7 '>
-      <h1 className="text-5xl font-bold text-center text-transparent bg-gradient-to-r from-blue-600 via-blue-500 to-blue-300 bg-clip-text">
-         Internships Hub!
+    <div className='bg-gray-100 p-7'>
+      <h1 className="font-bold text-center text-transparent text-7xl bg-gradient-to-r from-blue-900 via-blue-700 to-blue-500 bg-clip-text">
+         Intern Spark
       </h1>
       <p className="pt-6 font-medium text-center text-black">
         Discover internship opportunities and post openings to connect students with real-world experience
