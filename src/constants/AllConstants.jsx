@@ -21,7 +21,7 @@ export const cardContents1 = [
   // Company Navbar
    export const CompanynavItems = [
     'Home',
-    'DashBoard',
+    'Dashboard',
     'My Internships',
     'Applications',
     'Profile'
