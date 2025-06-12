@@ -7,11 +7,10 @@ const OutlineButton = ({ text, active, onClick }) => {
     <button
       onClick={onClick}
       className={`
-        flex-1 px-2 py-1 border border-white
-        transition duration-300
+        flex-1 px-2 py-1 border transition duration-300
         ${active
-          ? 'text-white'
-          : 'text-white/70 hover:bg-white hover:text-black cursor-pointer'}
+          ? 'bg-white text-black border-white'
+          : 'bg-opacity-10 text-white hover:bg-black hover:text-white cursor-pointer'}
         ${text === 'Company Profile' ? 'rounded-l-md' : 'rounded-r-md'}
         focus:outline-none
       `}
@@ -39,7 +38,7 @@ const CompanyProfile = () => {
   return (
     <div className="flex flex-col p-4 bg-transparent">
       <div className='max-w-md'>
-      <div className="flex">
+      <div className="flex ml-6">
         <OutlineButton
           text="Company Profile"
           active={activeTab === 'Company Profile'}
