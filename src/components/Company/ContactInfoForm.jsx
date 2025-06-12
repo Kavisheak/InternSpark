@@ -24,105 +24,100 @@ const ContactInfoForm = () => {
   };
 
   return (
-    <div className="min-h-screen p-2 ml-0">
-      <div className="grid grid-cols-1 gap-6 bg-transparent rounded-lg shadow-md pt-7 md:grid-cols-2">
-        
-        {/* Primary Contact */}
-        <div className="col-span-2">
-          <h2 className="mb-2 text-lg font-semibold text-white">Primary Contact</h2>
+    <div className="flex p-4 mt-4 ml-2 ">
+      <div className="grid w-full grid-cols-1 gap-6 max-w-10xl md:grid-cols-2">
+
+        {/* Primary Contact Card */}
+        <div className="p-6 bg-white border border-gray-300 shadow-lg rounded-xl">
+          <h2 className="mb-4 text-xl font-bold text-gray-800">Primary Contact</h2>
+
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">Contact Name</label>
+            <input
+              type="text"
+              name="primaryName"
+              
+              onChange={handleChange}
+              placeholder="e.g. Alex Morgan"
+              className="w-full px-3 py-2 mt-1 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">Email</label>
+            <input
+              type="email"
+              name="primaryEmail"
+              
+              onChange={handleChange}
+              placeholder="e.g. alex@company.com"
+              className="w-full px-3 py-2 mt-1 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-700">Phone Number</label>
+            <input
+              type="tel"
+              name="primaryPhone"
+              
+              onChange={handleChange}
+              placeholder="e.g. 555-123-4567"
+              className="w-full px-3 py-2 mt-1 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
         </div>
 
-        <div>
-          <label className="block text-sm font-medium text-white">Contact Name</label>
-          <input
-            type="text"
-            name="primaryName"
-            
-            onChange={handleChange}
-            placeholder="e.g. Alex Morgan"
-            className="block w-full px-3 py-2 mt-1 text-white bg-transparent border border-white rounded-md shadow-sm focus:ring-white focus:border-white"
-          />
+        {/* Secondary Contact Card */}
+        <div className="p-6 bg-white border border-gray-300 shadow-lg rounded-xl">
+          <h2 className="mb-4 text-xl font-bold text-gray-800">Secondary Contact (Optional)</h2>
+
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">Contact Name</label>
+            <input
+              type="text"
+              name="secondaryName"
+              
+              onChange={handleChange}
+              placeholder="e.g. Jordan Taylor"
+              className="w-full px-3 py-2 mt-1 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+
+          <div className="mb-4">
+            <label className="block text-sm font-medium text-gray-700">Email</label>
+            <input
+              type="email"
+              name="secondaryEmail"
+              
+              onChange={handleChange}
+              placeholder="e.g. jordan@company.com"
+              className="w-full px-3 py-2 mt-1 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
+
+          <div className="mb-6">
+            <label className="block text-sm font-medium text-gray-700">Phone Number</label>
+            <input
+              type="tel"
+              name="secondaryPhone"
+              
+              onChange={handleChange}
+              placeholder="e.g. 555-987-6543"
+              className="w-full px-3 py-2 mt-1 placeholder-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            />
+          </div>
         </div>
 
-        <div>
-          <label className="block text-sm font-medium text-white">Email</label>
-          <input
-            type="email"
-            name="primaryEmail"
-           
-            onChange={handleChange}
-            placeholder="e.g. alex@company.com"
-            className="block w-full px-3 py-2 mt-1 text-white bg-transparent border border-white rounded-md shadow-sm focus:ring-white focus:border-white"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-white">Phone Number</label>
-          <input
-            type="tel"
-            name="primaryPhone"
-            
-            onChange={handleChange}
-            placeholder="e.g. 555-123-4567"
-            className="block w-full px-3 py-2 mt-1 text-white bg-transparent border border-white rounded-md shadow-sm focus:ring-white focus:border-white"
-          />
-        </div>
-
-        <div></div>
-
-        {/* Secondary Contact */}
-        <div className="col-span-2">
-          <h2 className="mt-6 mb-2 text-lg font-semibold text-white">Secondary Contact (Optional)</h2>
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-white">Contact Name</label>
-          <input
-            type="text"
-            name="secondaryName"
-            
-            onChange={handleChange}
-            placeholder="e.g. Jordan Taylor"
-            className="block w-full px-3 py-2 mt-1 text-white bg-transparent border border-white rounded-md shadow-sm focus:ring-white focus:border-white"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-white">Email</label>
-          <input
-            type="email"
-            name="secondaryEmail"
-            
-            onChange={handleChange}
-            placeholder="e.g. jordan@company.com"
-            className="block w-full px-3 py-2 mt-1 text-white bg-transparent border border-white rounded-md shadow-sm focus:ring-white focus:border-white"
-          />
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-white">Phone Number</label>
-          <input
-            type="tel"
-            name="secondaryPhone"
-            
-            onChange={handleChange}
-            placeholder="e.g. 555-987-6543"
-            className="block w-full px-3 py-2 mt-1 text-white bg-transparent border border-white rounded-md shadow-sm focus:ring-white focus:border-white"
-          />
-        </div>
-
-        <div></div>
-
-        {/* Save Button */}
-        <div className="flex justify-end col-span-2">
+        {/* Save Button below both cards */}
+        <div className="flex justify-end col-span-1 md:col-span-2">
           <button
             onClick={handleSave}
-            className="px-4 py-2 text-white bg-indigo-600 rounded-md shadow-md hover:bg-indigo-700"
+            className="px-6 py-1 mt-2 text-white bg-indigo-600 rounded-md shadow-md hover:bg-indigo-700"
           >
             Save
           </button>
         </div>
-
       </div>
     </div>
   );
