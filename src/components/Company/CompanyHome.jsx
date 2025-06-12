@@ -4,6 +4,7 @@ import { CompanynavItems } from '../../constants/AllConstants';
 import Home from './Home';
 import MyInternships from './MyInternships';
 import CompanyProfile from './CompanyProfile';
+import Dashboard from './Dashboard';
 
 const CompanyHome = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ const CompanyHome = () => {
   const renderPage = (link) => {
     switch (link) {
       case 'Dashboard':
-        return <div className="mt-6 text-white">DashBoard</div>;
+        return <Dashboard/> ;
       case 'My Internships':
         return <MyInternships />;
       case 'Applications':
