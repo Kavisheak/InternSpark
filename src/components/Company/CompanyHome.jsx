@@ -25,7 +25,9 @@ const CompanyHome = () => {
   const renderPage = (link) => {
     switch (link) {
       case 'Dashboard':
-        return <Dashboard/> ;
+        return <Dashboard 
+           gotoMyInternships={()=>handleLinkClick('My Internships')}
+        /> ;
       case 'My Internships':
         return <MyInternships />;
       case 'Applications':

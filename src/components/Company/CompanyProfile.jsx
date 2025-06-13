@@ -4,6 +4,7 @@ import ContactInfoForm from './ContactInfoForm';
 
 const OutlineButton = ({ text, active, onClick }) => {
   return (
+
     <button
       onClick={onClick}
       className={`
@@ -37,6 +38,7 @@ const CompanyProfile = () => {
 
   return (
     <div className="flex flex-col p-4 bg-transparent">
+      <h1 className='mb-6 ml-6 text-3xl font-bold text-white'>Company Profile</h1>
       <div className='max-w-md'>
       <div className="flex ml-6">
         <OutlineButton
