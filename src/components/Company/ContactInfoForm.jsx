@@ -24,6 +24,7 @@ const ContactInfoForm = () => {
   };
 
   return (
+    <div className='p-3 mx-6 bg-gray-100 mt-7 rounded-xl'>
     <div className="flex p-4 mt-4 ml-2 ">
       <div className="grid w-full grid-cols-1 gap-6 max-w-10xl md:grid-cols-2">
 
@@ -119,6 +120,7 @@ const ContactInfoForm = () => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -38,7 +38,7 @@ const CompanyProfileForm = () => {
   ];
 
   return (
-    <div className="p-6 mt-1 ">
+    <div className="p-6 mt-1">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
 
         {/* Profile Card */}
@@ -95,7 +95,7 @@ const CompanyProfileForm = () => {
                   name={name}
                   onChange={handleChange}
                   placeholder={placeholder}
-                  className="w-full px-3 py-2 mt-1 placeholder-gray-400 bg-transparent border border-gray-600 rounded-md focus:ring-white focus:border-white"
+                  className="w-full px-3 py-2 mt-1 placeholder-gray-400 bg-transparent border border-gray-400 rounded-md focus:ring-indigo-500 focus:ring-2 focus:outline-none"
                 />
               </div>
             ))}
@@ -107,7 +107,7 @@ const CompanyProfileForm = () => {
               name="about"
               onChange={handleChange}
               placeholder="Write about your company here..."
-              className="w-full px-3 py-2 mt-1 bg-transparent border border-gray-600 rounded-md focus:ring-white focus:border-white"
+              className="w-full px-3 py-2 mt-1 bg-transparent border border-gray-400 rounded-md focus:outline-none focus:ring-indigo-500 focus:ring-2"
               rows="4"
             />
           </div>
