@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = ({ goToInternships, goToProfile }) => {
   return (
-    <div>
+    <div className='mt-0'>
       {/* Title */}
       <div className="relative flex flex-col items-center w-full mt-3">
         <h1 className="text-6xl font-bold text-center text-white">

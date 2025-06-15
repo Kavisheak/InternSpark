@@ -27,6 +27,8 @@ const CompanyHome = () => {
       case 'Dashboard':
         return <Dashboard 
            gotoMyInternships={()=>handleLinkClick('My Internships')}
+           goToApplications={()=>handleLinkClick('Applications')}
+
         /> ;
       case 'My Internships':
         return <MyInternships />;

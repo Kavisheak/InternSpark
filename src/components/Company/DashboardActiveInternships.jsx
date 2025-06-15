@@ -40,7 +40,7 @@ const DashboardActiveInternships = ({ gotoMyInternships }) => {
             </p>
           </div>
           <div className="flex items-center mt-3 space-x-4 md:mt-0">
-            <span className="px-3 py-1 text-sm font-medium text-green-700 rounded-full bg-green-50">
+            <span className="px-3 py-1 text-sm font-medium text-gray-600 rounded-full bg-green-50">
               {intern.applications} Applications
             </span>
             <button className="px-3 py-1 text-sm text-white border border-gray-300 rounded hover:bg-white/10">

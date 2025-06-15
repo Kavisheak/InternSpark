@@ -6,12 +6,12 @@ const applications = [
   { name: 'Alex Washington', role: 'Data Science Intern', status: 'Interviewing', statusColor: 'border border-gray-400 text-black bg-white' },
 ];
 
-const DashboardRecentApplications = () => {
+const DashboardRecentApplications = ({goToApplications}) => {
   return (
     <div className="mb-8">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-2xl font-semibold text-white">Recent Applications</h2>
-        <button className="px-4 py-1 text-sm text-white border border-white rounded hover:bg-white/10">View All</button>
+        <button className="px-4 py-1 text-sm text-white border border-white rounded hover:bg-white/10" onClick={goToApplications}>View All</button>
       </div>
 
       <div className="space-y-3">
@@ -28,7 +28,7 @@ const DashboardRecentApplications = () => {
               <span className={`text-xs px-3 py-1 rounded-full ${app.statusColor} font-medium`}>
                 {app.status}
               </span>
-              <button className="text-sm text-blue-300 hover:underline">View</button>
+              <button className="text-sm text-blue-200 hover:underline">View</button>
             </div>
           </div>
         ))}
